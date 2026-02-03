@@ -1,0 +1,4 @@
+/* Backward-compatible stylesheet.
+   The support page now uses /style.css, but keep this file so older links won't break. */
+
+@import url("../style.css");
