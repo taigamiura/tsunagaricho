@@ -1,4 +1,4 @@
-/* Global cute & gentle theme for つながり帳 (static pages) */
+/* Global cute & gentle theme for Lieny（リエニー） (static pages) */
 
 :root {
     --bg: #fff8fb;
@@ -247,14 +247,14 @@ a.link:hover {
 
 .feature-list {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
 }
 
 .feature {
     display: grid;
-    grid-template-columns: 172px 1fr;
-    gap: 16px;
+    grid-template-columns: 1fr;
+    gap: 12px;
     align-items: center;
     border-radius: var(--radius);
     border: 1px solid var(--border);
@@ -264,12 +264,14 @@ a.link:hover {
 }
 
 .feature img {
-    width: 172px;
+    width: 100%;
+    max-width: 320px;
     height: auto;
     border-radius: 18px;
     border: 1px solid rgba(17, 24, 39, 0.08);
     box-shadow: 0 14px 36px rgba(21, 32, 56, 0.10);
     background: #fff;
+    justify-self: center;
 }
 
 .feature h3 {
@@ -377,15 +379,18 @@ a.link:hover {
 /* Responsive */
 @media (max-width: 880px) {
     .feature-list {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .feature {
         grid-template-columns: 148px 1fr;
+        gap: 14px;
     }
 
     .feature img {
         width: 148px;
+        max-width: none;
+        justify-self: start;
     }
 }
 
